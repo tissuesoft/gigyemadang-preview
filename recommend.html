@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>나에게 맞는 기계 찾기 · 중고기계마당 미리보기</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#F4F3EF}
+a{color:#1747B5}a:hover{color:#0F2F7A}
+.rc button:focus-visible,.rc a:focus-visible{outline:3px solid #F2A65A;outline-offset:3px}
+.rc .opt:hover{border-color:#12263F;background:#F8F7F3}
+</style>
+
+<style>.preview-ribbon{background:#F2A65A;color:#14171C;text-align:center;font:700 14px/1.5 'Noto Sans KR',sans-serif;padding:6px 12px}</style>
+<script src="dc-mini.js"></script>
+<script>window.DC_TREE = [["div", {"class": "rc", "style": "font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; font-size: 19px; color: #14171C; background: #F4F3EF; line-height: 1.6; min-height: 100vh"}, [["header", {"style": "background: #FFFFFF; border-bottom: 1px solid #DAD7CF"}, [["div", {"style": "max-width: 860px; margin: 0 auto; padding: 0.8em 16px; display: flex; flex-wrap: wrap; gap: 0.6em; align-items: center; justify-content: space-between"}, [["a", {"href": "index.html", "style": "text-decoration: none; color: #12263F; font-size: 1.4em; font-weight: 900"}, ["중고기계마당"]], "\n", ["a", {"href": "tel:0000000000", "style": "text-decoration: none; color: #12263F; font-weight: 700; border: 2px solid #12263F; border-radius: 10px; padding: 0 1em; min-height: 48px; display: flex; align-items: center"}, ["전화로 물어보기"]], "\n"]], "\n"]], "\n\n", ["main", {"style": "max-width: 860px; margin: 0 auto; padding: 2em 16px 3em"}, [["sc-if", {"value": "{{asking}}", "hint-placeholder-val": "{{ true }}"}, [["p", {"style": "margin: 0; font-weight: 700; color: #B8430F"}, ["나에게 맞는 기계 찾기 · {{stepLabel}}"]], "\n", ["div", {"role": "progressbar", "aria-label": "진행 단계", "aria-valuemin": "1", "aria-valuemax": "5", "aria-valuenow": "{{stepNo}}", "style": "height: 12px; background: #E1DED6; border-radius: 999px; margin: 0.6em 0 1.6em; overflow: hidden"}, [["div", {"style": "height: 100%; width: {{progress}}; background: #12263F; border-radius: 999px"}, []], "\n"]], "\n", ["h1", {"style": "margin: 0 0 0.3em; font-size: 1.8em; font-weight: 900; line-height: 1.35"}, ["{{q.title}}"]], "\n", ["p", {"style": "margin: 0 0 1.4em; color: #3D434C; font-size: 1.05em"}, ["{{q.help}}"]], "\n", ["div", {"style": "display: flex; flex-direction: column; gap: 0.8em"}, [["sc-for", {"list": "{{q.options}}", "as": "o", "hint-placeholder-count": "4"}, [["button", {"type": "button", "class": "opt", "onClick": "{{o.pick}}", "style": "font: inherit; text-align: left; cursor: pointer; background: #FFFFFF; color: #14171C; border: 2px solid #C9C5BB; border-radius: 14px; padding: 1em 1.2em; min-height: 72px; display: flex; flex-direction: column; gap: 0.15em"}, [["span", {"style": "font-size: 1.2em; font-weight: 700"}, ["{{o.label}}"]], "\n", ["span", {"style": "font-size: 0.95em; color: #545B66"}, ["{{o.ex}}"]], "\n"]], "\n"]], "\n"]], "\n", ["div", {"style": "display: flex; flex-wrap: wrap; gap: 0.8em; justify-content: space-between; margin-top: 1.6em"}, [["sc-if", {"value": "{{canBack}}", "hint-placeholder-val": "{{ false }}"}, [["button", {"type": "button", "onClick": "{{back}}", "style": "font: inherit; font-weight: 700; cursor: pointer; background: transparent; color: #12263F; border: 2px solid #12263F; border-radius: 12px; padding: 0 1.3em; min-height: 56px"}, ["← 이전 질문"]], "\n"]], "\n", ["a", {"href": "tel:0000000000", "style": "font-weight: 700; min-height: 56px; display: flex; align-items: center"}, ["잘 모르겠으면 전화로 물어보세요"]], "\n"]], "\n"]], "\n\n", ["sc-if", {"value": "{{done}}", "hint-placeholder-val": "{{ false }}"}, [["p", {"style": "margin: 0; font-weight: 700; color: #B8430F"}, ["추천 결과"]], "\n", ["h1", {"style": "margin: 0.2em 0 0.4em; font-size: 2em; font-weight: 900; line-height: 1.3"}, ["{{rec.name}}"]], "\n", ["p", {"style": "margin: 0 0 1.4em; font-size: 1.15em"}, ["{{rec.spec}}"]], "\n\n", ["div", {"style": "background: #FFFFFF; border: 1px solid #DAD7CF; border-radius: 16px; padding: 1.4em; margin-bottom: 1.2em"}, [["h2", {"style": "margin: 0 0 0.6em; font-size: 1.3em; font-weight: 900"}, ["이 기계를 추천하는 이유"]], "\n", ["ul", {"style": "margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 0.4em"}, [["sc-for", {"list": "{{rec.why}}", "as": "w", "hint-placeholder-count": "3"}, [["li", {}, ["{{w}}"]], "\n"]], "\n"]], "\n"]], "\n\n", ["div", {"style": "background: #FFFFFF; border: 1px solid #DAD7CF; border-radius: 16px; padding: 1.4em; margin-bottom: 1.2em"}, [["h2", {"style": "margin: 0 0 0.6em; font-size: 1.3em; font-weight: 900"}, ["중고로 살 때 꼭 볼 것"]], "\n", ["ul", {"style": "margin: 0; padding-left: 1.2em; display: flex; flex-direction: column; gap: 0.4em"}, [["sc-for", {"list": "{{rec.check}}", "as": "c", "hint-placeholder-count": "3"}, [["li", {}, ["{{c}}"]], "\n"]], "\n"]], "\n"]], "\n\n", ["div", {"style": "background: #12263F; color: #FFFFFF; border-radius: 16px; padding: 1.4em; margin-bottom: 1.2em; display: flex; flex-wrap: wrap; gap: 0.6em 2em; align-items: center; justify-content: space-between"}, [["div", {}, [["p", {"style": "margin: 0; font-size: 1em"}, ["요즘 이 기계 중고 가격대 (판매자 희망가격)"]], "\n", ["p", {"style": "margin: 0.1em 0 0; font-size: 1.6em; font-weight: 900"}, ["{{rec.range}}"]], "\n", ["p", {"style": "margin: 0.2em 0 0; font-size: 0.9em; opacity: 0.85"}, ["{{rec.rangeNote}}"]], "\n"]], "\n", ["p", {"style": "margin: 0; font-size: 1.05em"}, ["지금 국내 매물 ", ["strong", {}, ["{{rec.count}}"]]]], "\n"]], "\n\n", ["sc-if", {"value": "{{rec.budgetNote}}", "hint-placeholder-val": "{{ false }}"}, [["p", {"style": "margin: 0 0 1.2em; background: #FFF4E5; border: 1px solid #F2C38B; border-radius: 12px; padding: 1em 1.2em"}, ["{{rec.budgetNote}}"]], "\n"]], "\n\n", ["div", {"style": "display: flex; flex-wrap: wrap; gap: 0.8em"}, [["a", {"href": "index.html", "style": "text-decoration: none; background: #B8430F; color: #FFFFFF; font-weight: 700; font-size: 1.1em; padding: 0 1.5em; min-height: 60px; border-radius: 12px; display: flex; align-items: center"}, ["이 조건 매물 보기"]], "\n", ["a", {"href": "tel:0000000000", "style": "text-decoration: none; background: #FFFFFF; color: #12263F; border: 2px solid #12263F; font-weight: 700; font-size: 1.1em; padding: 0 1.5em; min-height: 60px; border-radius: 12px; display: flex; align-items: center"}, ["전문가와 통화하기"]], "\n", ["a", {"href": "index.html", "style": "text-decoration: none; background: #FFFFFF; color: #12263F; border: 2px solid #12263F; font-weight: 700; font-size: 1.1em; padding: 0 1.5em; min-height: 60px; border-radius: 12px; display: flex; align-items: center"}, ["매물 나오면 알림 받기"]], "\n"]], "\n\n", ["div", {"style": "margin-top: 1.6em; border-top: 1px solid #DAD7CF; padding-top: 1em"}, [["p", {"style": "margin: 0 0 0.6em; color: #3D434C"}, ["내가 고른 답"]], "\n", ["ul", {"style": "margin: 0 0 1em; padding-left: 1.2em; color: #3D434C"}, [["sc-for", {"list": "{{summary}}", "as": "s", "hint-placeholder-count": "5"}, [["li", {}, ["{{s}}"]], "\n"]], "\n"]], "\n", ["button", {"type": "button", "onClick": "{{restart}}", "style": "font: inherit; font-weight: 700; cursor: pointer; background: transparent; color: #12263F; border: 2px solid #12263F; border-radius: 12px; padding: 0 1.3em; min-height: 52px"}, ["처음부터 다시 하기"]], "\n"]], "\n", ["p", {"style": "margin: 1.4em 0 0; font-size: 0.9em; color: #545B66"}, ["추천은 일반적인 기준이에요. 정확한 사양(호기·인치·톤수)은 만드실 부품 도면을 보고 상담으로 정하는 게 가장 확실합니다."]], "\n"]], "\n\n"]], "\n"]], "\n"];</script>
+<script>
+class Component extends DCLogic {
+  // 국내 4개 사이트 매물 희망가격 분포 (scripts/price_by_type.py 결과, 원 단위)
+  priceTable() {
+    return {
+  'CNC 선반': { n: 575, priced: 55, p25: 9000000, med: 17000000, p75: 31000000 },
+  '범용 선반': { n: 575, priced: 206, p25: 3000000, med: 5000000, p75: 12000000 },
+  '범용 밀링': { n: 601, priced: 165, p25: 3500000, med: 6000000, p75: 9500000 },
+  '머시닝센터': { n: 1187, priced: 118, p25: 20400000, med: 33500000, p75: 55000000 },
+  '탭핑센터': { n: 115, priced: 12, p25: 1000000, med: 4200000, p75: 14500000 },
+  '절곡기': { n: 72, priced: 9, p25: 7900000, med: 14000000, p75: 19000000 },
+  '프레스': { n: 257, priced: 96, p25: 1600000, med: 4000000, p75: 7600000 },
+  '레이디얼 드릴': { n: 106, priced: 26, p25: 500000, med: 2300000, p75: 5300000 },
+  '평면 연삭기': { n: 81, priced: 14, p25: 9600000, med: 11000000, p75: 18600000 }
+    };
+  }
+  constructor(props) {
+    super(props);
+    this.state = { step: 0, a: {} };
+  }
+  questions() {
+    return [
+      { key: 'work', title: '주로 무엇을 만드시나요?', help: '가장 많이 만드는 것 하나만 골라 주세요.', options: [
+        { v: 'round', label: '둥근 부품', ex: '축, 볼트, 부싱, 플랜지, 파이프 가공' },
+        { v: 'block', label: '각진 부품', ex: '금형, 브래킷, 케이스, 지그, 판재 가공' },
+        { v: 'sheet', label: '철판을 접거나 자르기', ex: '판금, 함체, 덕트, 철골 부속' },
+        { v: 'hole', label: '구멍 뚫고 탭 내기', ex: '구멍·나사산 작업이 대부분' },
+        { v: 'grind', label: '표면을 정밀하게 갈기', ex: '평면·치수를 아주 정밀하게 마무리' }
+      ]},
+      { key: 'mat', title: '재료는 주로 무엇인가요?', help: '재료에 따라 필요한 힘과 속도가 달라져요.', options: [
+        { v: 'steel', label: '철 · 스테인리스', ex: '단단한 쇠 종류' },
+        { v: 'alu', label: '알루미늄 · 황동 · 비철', ex: '가볍고 무른 금속' },
+        { v: 'plastic', label: '플라스틱 · 기타', ex: '엔지니어링 플라스틱 등' }
+      ]},
+      { key: 'size', title: '부품 크기는 어느 정도인가요?', help: '가장 큰 부품 기준으로 골라 주세요.', options: [
+        { v: 's', label: '손바닥만 하거나 더 작아요', ex: '대략 15cm 이하' },
+        { v: 'm', label: '팔뚝 길이 정도', ex: '대략 30~50cm' },
+        { v: 'l', label: '그보다 커요', ex: '1m 가까이 되는 대형 부품' }
+      ]},
+      { key: 'qty', title: '한 번에 몇 개씩 만드시나요?', help: '수량이 많을수록 자동(CNC) 기계가 유리해요.', options: [
+        { v: 'few', label: '한두 개씩, 그때그때', ex: '수리·시제품·소량 주문' },
+        { v: 'mid', label: '수십에서 수백 개', ex: '같은 부품을 꾸준히' },
+        { v: 'many', label: '수천 개 이상 반복', ex: '양산 납품' }
+      ]},
+      { key: 'budget', title: '기계 예산은 어느 정도인가요?', help: '중고 기준이에요. 운반·설치비는 따로예요.', options: [
+        { v: 1, label: '1천만 원 이하', ex: '' },
+        { v: 2, label: '1천만 ~ 3천만 원', ex: '' },
+        { v: 3, label: '3천만 ~ 6천만 원', ex: '' },
+        { v: 4, label: '6천만 원 이상', ex: '' }
+      ]}
+    ];
+  }
+  recommend(a) {
+    const big = a.size === 'l', small = a.size === 's';
+    const cnc = a.qty !== 'few';
+    let r;
+    if (a.work === 'round') {
+      r = cnc
+        ? { type: 'CNC 선반', name: 'CNC 선반', spec: small ? '8인치 이하 척 크기 · 소형 CNC 선반' : big ? '12인치 이상 척 크기 · 대형 CNC 선반' : '10인치 척 크기 · 중형 CNC 선반',
+            why: ['같은 둥근 부품을 반복해서 깎을 때 가장 빠르고 치수가 일정해요.', '프로그램 한 번 짜두면 사람 손이 덜 들어가요.'],
+            check: ['주축(스핀들) 소리와 떨림', '척·공구대(터렛) 상태와 공구 교환이 매끄러운지', '컨트롤러 알람 기록과 백업 데이터가 있는지'] }
+        : { type: '범용 선반', name: '범용 선반', spec: small ? '5자 정도 · 소형 범용 선반' : big ? '8자 이상 · 대형 범용 선반' : '6자 정도 · 중형 범용 선반',
+            why: ['한두 개씩 깎는 일에는 프로그램 없이 바로 쓰는 범용이 빠르고 경제적이에요.', '기계값이 싸고 고장 나도 고치기 쉬워요.'],
+            check: ['베드(미끄럼면) 마모와 긁힘', '주축 소음과 기어 변속이 잘 되는지', '심압대·척 상태'] };
+      if (cnc && small && a.qty === 'many') r.why.push('아주 작은 부품을 대량으로 만든다면 CNC 자동반(스위스형)도 함께 상담해 보세요.');
+    } else if (a.work === 'block') {
+      if (!cnc) {
+        r = { type: '범용 밀링', name: '범용 밀링', spec: big ? '3호기 이상 · 대형 범용 밀링' : '2호기 정도 · 범용 밀링',
+          why: ['소량·수리 작업은 범용 밀링으로 충분해요.', '기계값과 유지비 부담이 적어요.'],
+          check: ['테이블 이송 나사 유격(백래시)', '주축 헤드 소음', '테이블 윗면 손상'] };
+      } else if (a.mat === 'alu' && small) {
+        r = { type: '탭핑센터', name: '탭핑센터 (소형 머시닝센터)', spec: '고속 주축 · 소형 머시닝센터',
+          why: ['알루미늄 소형 부품을 빠르게 대량 가공하는 데 강해요.', '머시닝센터보다 작고 빨라 공간도 덜 차지해요.'],
+          check: ['주축 최고 회전 때 소음과 열', '공구 교환 속도와 매거진 상태', '절삭유 탱크·칩 처리 상태'] };
+      } else {
+        r = { type: '머시닝센터', name: '머시닝센터', spec: small ? '4호기 정도 · 소형 머시닝센터' : big ? '6호기 이상 · 대형 머시닝센터' : '5호기 정도 · 중형 머시닝센터',
+          why: ['각진 부품의 면·홈·구멍을 한 번에 가공해요.', '공구를 자동으로 바꿔 끼워 반복 작업에 강해요.'],
+          check: ['주축 테이퍼(공구 꽂는 곳) 마모', '각 축 이송 소음과 유격', '자동 공구 교환(ATC) 동작', '컨트롤러 알람 기록'] };
+      }
+    } else if (a.work === 'sheet') {
+      if (small && a.qty === 'many') {
+        r = { type: '프레스', name: '파워 프레스 + 금형', spec: '작은 판금 부품을 찍어내는 크랭크·파워 프레스',
+          why: ['손바닥만 한 철판 부품을 수천 개씩 만들 땐 금형으로 한 번에 찍어내는 프레스가 가장 빨라요.', '모양이 바뀌면 금형만 새로 만들면 돼요. 접는 공정이 남는다면 소형 절곡기도 함께 보세요.'],
+          check: ['클러치·브레이크 작동과 정지 위치', '슬라이드 유격', '안전 장치(광선·양손 조작)와 안전검사 이력'] };
+      } else {
+        r = { type: '절곡기', name: '절곡기 (프레스 브레이크)' + (big ? ' + 샤링기' : ''), spec: '철판 두께와 접는 길이에 맞는 톤수·길이',
+          why: ['철판을 원하는 각도로 정확하게 접을 수 있어요.', big ? '긴 철판을 다룬다면 자르는 샤링기도 함께 있으면 편해요.' : '소형 판금은 작은 절곡기로도 충분해요.'],
+          check: ['유압 누유와 실린더 상태', '상·하 금형 마모', '안전 장치(광선·양손 조작) 작동 여부'] };
+      }
+    } else if (a.work === 'hole') {
+      r = !cnc
+        ? { type: '레이디얼 드릴', name: '레이디얼 드릴 (보루방)', spec: big ? '팔 길이가 긴 대형 레이디얼 드릴' : '탁상·직립 드릴 또는 소형 레이디얼 드릴',
+            why: ['구멍 위주 소량 작업에는 값싸고 단순한 드릴이 제일이에요.', '큰 부품도 팔을 돌려가며 뚫을 수 있어요.'],
+            check: ['주축 흔들림', '변속 레버 작동', '팔·기둥 고정 상태'] }
+        : big
+        ? { type: '머시닝센터', name: '머시닝센터', spec: '테이블이 큰 5~6호기 이상',
+            why: ['큰 부품은 탭핑센터 테이블에 올라가지 않아 머시닝센터가 맞아요.', '구멍·탭을 자동으로 반복 가공해요.'],
+            check: ['테이블 크기와 적재 무게', '자동 공구 교환(ATC) 동작', '각 축 이송 유격'] }
+        : { type: '탭핑센터', name: '탭핑센터', spec: '구멍·탭 전용 고속 기계',
+            why: ['구멍과 나사산을 빠르게 반복 가공해요.', '공구 교환이 빨라 수량이 많을수록 이득이에요.'],
+            check: ['주축 회전과 탭 동기 동작', '공구 매거진 상태', '테이블 이송 유격'] };
+    } else {
+      r = { type: '평면 연삭기', name: a.size === 's' ? '평면 연삭기 (소형)' : '평면 연삭기', spec: big ? '테이블이 긴 대형 평면 연삭기' : '소·중형 평면 연삭기',
+        why: ['선반·밀링으로 깎은 뒤 표면과 치수를 정밀하게 마무리해요.', '금형·지그 정밀 부품에 꼭 필요해요.', '둥근 부품의 바깥지름을 가는 일이라면 원통 연삭기가 맞아요.'],
+        check: ['숫돌 축 소음과 떨림', '테이블 미끄럼면 상태', '마그네틱 척 흡착력'] };
+    }
+    // 가격대: 국내 매물 희망가격 분포(가격이 적힌 매물 기준). 대형은 상위 25% 쪽으로 본다.
+    const PRICE_DATE = '2026.10.27';
+    const p = this.priceTable()[r.type];
+    const man = (x) => Math.round(x / 10000).toLocaleString('ko-KR') + '만 원';
+    r.count = p ? p.n.toLocaleString('ko-KR') + '건' : '-';
+    if (p && p.priced >= 15) {
+      r.range = '약 ' + man(p.p25) + ' ~ ' + man(p.p75);
+      r.rangeNote = '가운데 값 ' + man(p.med) + ' · 가격이 적힌 매물 ' + p.priced + '건 기준 (' + PRICE_DATE + ' 수집)';
+    } else {
+      r.range = '상담으로 확인';
+      r.rangeNote = '가격을 공개한 매물이 적어요' + (p ? ' (' + p.priced + '건)' : '') + '. 전화로 물어보시면 바로 알려드려요.';
+    }
+    const cap = { 1: 10000000, 2: 30000000, 3: 60000000, 4: Infinity }[a.budget];
+    const ref = p && p.priced >= 15 ? (big ? p.p75 : p.med) : null;
+    r.budgetNote = ref && cap < (big ? ref : p.p25)
+      ? '고르신 예산은 이 기계 매물 대부분보다 낮아요. 연식이 오래된 기계 위주로 찾게 되니, 시운전을 꼭 보고 사세요.'
+      : ref && cap < ref
+      ? '고르신 예산이면 중간 가격보다 아래쪽 매물에서 찾게 돼요. 상태 점검을 꼼꼼히 하세요.'
+      : '';
+    return r;
+  }
+  renderVals() {
+    const qs = this.questions();
+    const { step, a } = this.state;
+    const done = step >= qs.length;
+    const q = done ? qs[qs.length - 1] : qs[step];
+    const pick = (key, v) => () => this.setState({ a: { ...a, [key]: v }, step: step + 1 });
+    const summary = qs.map((x) => {
+      const o = x.options.find((o) => o.v === a[x.key]);
+      return x.title.replace('?', '') + ' → ' + (o ? o.label : '-');
+    });
+    return {
+      asking: !done, done,
+      stepNo: Math.min(step + 1, qs.length),
+      stepLabel: (Math.min(step + 1, qs.length)) + ' / ' + qs.length,
+      progress: Math.round((Math.min(step + 1, qs.length) / qs.length) * 100) + '%',
+      q: { title: q.title, help: q.help, options: q.options.map((o) => ({ ...o, pick: pick(q.key, o.v) })) },
+      canBack: step > 0 && !done,
+      back: () => this.setState({ step: Math.max(0, step - 1) }),
+      restart: () => this.setState({ step: 0, a: {} }),
+      rec: done ? this.recommend(a) : { name: '', spec: '', why: [], check: [], budgetNote: '', range: '', rangeNote: '', count: '' },
+      summary
+    };
+  }
+}
+
+window.Component = Component;</script>
+</head>
+<body>
+<div class="preview-ribbon">오픈 전 미리보기 사이트입니다 · 검색 노출 안 됨 · 연락처·가격 일부는 임시값</div>
+<div id="dc-root"></div>
+</body>
+</html>
